@@ -512,13 +512,19 @@ function Navbar() {
             >
               Home
             </Link>
+            <Link
+              to="/chapters"
+              className="text-gray-600 dark:text-gray-300 hover:text-teal-500"
+            >
+              Quran
+            </Link>
             {user ? (
               <>
                 <Link
-                  to="/verses"
+                  to="/progress"
                   className="text-gray-600 dark:text-gray-300 hover:text-teal-500"
                 >
-                  Verses
+                  Progress
                 </Link>
                 <Link
                   to="/quiz"
