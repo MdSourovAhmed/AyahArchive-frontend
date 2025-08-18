@@ -86,7 +86,7 @@ function Home() {
         to={user ? "/progress" : "/login"}
         className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600"
       >
-        Get Started by Logging In
+        Get Started
       </Link>
       <div className="mt-12 grid md:grid-cols-3 gap-8">
         <Link
