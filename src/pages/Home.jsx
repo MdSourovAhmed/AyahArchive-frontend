@@ -1,38 +1,3 @@
-// import { Link } from 'react-router-dom';
-
-// function Home() {
-//   return (
-//     <div className="text-center">
-//       <div className="bg-gradient-to-r from-teal-500 to-blue-500 text-white py-16 rounded-lg">
-//         <h1 className="text-4xl font-bold">WordWorden</h1>
-//         <p className="mt-2 text-lg">Organize and memorize Bible verses with ease</p>
-//         <Link
-//           to="/register"
-//           className="mt-4 inline-block bg-white text-teal-500 px-6 py-2 rounded-lg hover:bg-gray-100"
-//         >
-//           Get Started
-//         </Link>
-//       </div>
-//       <div className="grid md:grid-cols-3 gap-4 mt-8">
-//         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
-//           <h3 className="text-xl font-semibold">Add Verses</h3>
-//           <p className="text-gray-600 dark:text-gray-300">Store your favorite verses</p>
-//         </div>
-//         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
-//           <h3 className="text-xl font-semibold">Practice Quizzes</h3>
-//           <p className="text-gray-600 dark:text-gray-300">Test your memory</p>
-//         </div>
-//         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md">
-//           <h3 className="text-xl font-semibold">Track Progress</h3>
-//           <p className="text-gray-600 dark:text-gray-300">Monitor your memorization</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
-
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
@@ -118,28 +83,28 @@ function Home() {
         Memorize and Practice The QURA'N with ease.
       </p>
       <Link
-        to={user ? "/verses" : "/register"}
+        to={user ? "/progress" : "/register"}
         className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600"
       >
         Get Started
       </Link>
       <div className="mt-12 grid md:grid-cols-3 gap-8">
         <Link
-          to="/verses"
+          to="/progress"
           className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
-          <h3 className="text-xl font-semibold text-teal-500">Add Verse</h3>
+          <h3 className="text-xl font-semibold text-teal-500">Add to your Vault</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Save and organize your favorite SURAHs.
+            Save and organize your favorite Surahs.
           </p>
         </Link>
         <Link
-          to="/quiz"
+          to="/chapters"
           className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
         >
-          <h3 className="text-xl font-semibold text-teal-500">Practice Quiz</h3>
+          <h3 className="text-xl font-semibold text-teal-500">Read The QUR'AN</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Test your memory with interactive quizzes.
+            Read any Surahs and their verses.
           </p>
         </Link>
         <Link
