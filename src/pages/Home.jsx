@@ -83,10 +83,10 @@ function Home() {
         Memorize and Practice The QURA'N with ease.
       </p>
       <Link
-        to={user ? "/progress" : "/register"}
+        to={user ? "/progress" : "/login"}
         className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600"
       >
-        Get Started
+        Get Started by Logging In
       </Link>
       <div className="mt-12 grid md:grid-cols-3 gap-8">
         <Link
@@ -104,7 +104,7 @@ function Home() {
         >
           <h3 className="text-xl font-semibold text-teal-500">Read The QUR'AN</h3>
           <p className="text-gray-600 dark:text-gray-300">
-            Read any Surahs and their verses.
+            Read any Surah and its verses.
           </p>
         </Link>
         <Link
