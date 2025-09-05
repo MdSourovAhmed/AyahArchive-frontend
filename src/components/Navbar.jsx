@@ -67,12 +67,6 @@ function Navbar() {
                 >
                   My Vault
                 </Link>
-{/*                 <Link
-                  to="/quiz"
-                  className="text-gray-600 dark:text-gray-300 hover:text-teal-500"
-                >
-                  Quiz
-                </Link> */}
                 <Link
                   to="/dashboard"
                   className="text-gray-600 dark:text-gray-300 hover:text-teal-500"
