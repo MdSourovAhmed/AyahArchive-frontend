@@ -34,7 +34,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-10">
+    <nav className="bg-white dark:bg-gray-800 shadow-md sticky top-0">
       <div className="container mx-auto p-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-teal-500">
           AyahArchive
