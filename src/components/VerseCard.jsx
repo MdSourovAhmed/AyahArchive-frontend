@@ -170,7 +170,7 @@ function VerseCard({
         <>
           <div className="flex justify-between items-center">
             <div>
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold dark:text-gray-300">
                 {isQuranVerse
                   ? `${verse.surahId?.surahNameArabic || "Surah"} (${
                       verse.surahId?.surahNameEnglish || verse.surahNumber
@@ -240,7 +240,7 @@ function VerseCard({
                       <p className="text-lg font-semibold text-gray-700 dark:text-gray-300">
                         Verse {v.verseNumber}:
                       </p>
-                      <p className="text-right font-arabic text-lg">
+                      <p className="text-right font-arabic text-lg dark:text-gray-300">
                         {v.arabicText}
                       </p>
                       <p className="text-gray-600 dark:text-gray-300">
