@@ -29,7 +29,7 @@ function ChapterList({ chapters, surah, verses, isSearchResult = false }) {
         handleSurahClick(surahData);
       }}
     >
-      <h3 className="text-lg font-semibold">
+      <h3 className="text-lg font-semibold dark:text-gray-300">
         {surahData.surahNameArabic} ({surahData.surahNameEnglish}, {surahData.surahNumber})
       </h3>
       <p className="text-gray-600 dark:text-gray-300">
