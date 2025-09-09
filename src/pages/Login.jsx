@@ -20,7 +20,7 @@ function Login() {
   return (
     <div className="max-w-md mx-auto mt-8">
       {/* <p>Data is {data}</p> */}
-      <h2 className="text-2xl font-bold text-center">Login</h2>
+      <h2 className="text-2xl font-bold text-center dark:text-gray-300">Login</h2>
       <AuthForm onSubmit={handleSubmit} isLogin={true} />
     </div>
   );
