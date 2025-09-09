@@ -75,11 +75,11 @@ function Progress() {
 
   return (
     <div className="container mx-auto px-4">
-      <h2 className="text-2xl font-bold mb-4">My Memorization Progress</h2>
+      <h2 className="text-2xl font-bold mb-4 dark:text-gray-300">My Memorization Progress</h2>
       <ProgressForm onSubmit={handleAdd} />
       <div className="flex flex-row gap-4 md:flex-row flex-col">
         <div className="flex-1">
-          <h3 className="text-xl font-semibold mb-2">Memorized</h3>
+          <h3 className="text-xl font-semibold mb-2 dark:text-gray-300">Memorized</h3>
           <div className="grid md:grid-cols-1 gap-4">
             {memorizedVerses.length === 0 ? (
               <p className="text-gray-600 dark:text-gray-300">No memorized verses.</p>
@@ -106,7 +106,7 @@ function Progress() {
           </div>
         </div>
         <div className="flex-1">
-          <h3 className="text-xl font-semibold mb-2">In Progress</h3>
+          <h3 className="text-xl font-semibold mb-2 dark:text-gray-300">In Progress</h3>
           <div className="grid md:grid-cols-1 gap-4">
             {inProgressVerses.length === 0 ? (
               <p className="text-gray-600 dark:text-gray-300">No in-progress verses.</p>
