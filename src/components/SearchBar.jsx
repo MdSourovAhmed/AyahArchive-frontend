@@ -1,29 +1,3 @@
-// import { useState } from 'react';
-
-// function SearchBar({ onSearch }) {
-//   const [searchTerm, setSearchTerm] = useState('');
-
-//   const handleChange = (e) => {
-//     setSearchTerm(e.target.value);
-//     onSearch(e.target.value);
-//   };
-
-//   return (
-//     <div className="mb-4">
-//       <input
-//         type="text"
-//         value={searchTerm}
-//         onChange={handleChange}
-//         placeholder="Search verses by book, chapter, or text..."
-//         className="w-full p-2 border dark:border-gray-600 rounded-lg dark:bg-gray-700 text-gray-600 dark:text-gray-300"
-//       />
-//     </div>
-//   );
-// }
-
-// export default SearchBar;
-
-
 import { useState } from 'react';
 
 function SearchBar({ onSearch }) {
