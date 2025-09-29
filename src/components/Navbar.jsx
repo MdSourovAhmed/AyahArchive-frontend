@@ -73,12 +73,6 @@ function Navbar() {
                 >
                   Dashboard
                 </Link>
-                {/* <Link to="/chapters" className="text-gray-600 dark:text-gray-300 hover:text-teal-500">
-                  Chapters
-                </Link> */}
-                {/* <span className="text-gray-600 dark:text-gray-300">
-                  Welcome, {user.name || user.email}
-                </span> */}
                 <button
                   onClick={handleLogout}
                   className="text-gray-600 dark:text-gray-300 hover:text-teal-500"
