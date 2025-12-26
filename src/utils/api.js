@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://ayaharchive-backend.onrender.com/api', // Updated to match backend port
+  baseURL: import.meta.env.VITE_API_URL,//'https://ayaharchive-backend.onrender.com/api', // Updated to match backend port//'http://localhost:3000/api',
 });
 
 api.interceptors.request.use((config) => {
