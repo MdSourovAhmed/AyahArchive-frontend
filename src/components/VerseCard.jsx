@@ -107,19 +107,19 @@ function VerseCard({
     } catch (err) {
       console.error(
         "Error submitting edit:",
-        err.response?.data?.message || err.message
+        err.response?.data?.message || err.message,
       );
       alert(
         `Failed to edit verse range: ${
           err.response?.data?.message || "Unknown error"
-        }`
+        }`,
       );
     }
   };
 
   return (
     <div
-      className={`bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md transition-all ${
+      className={`bg-white dark:bg-gray-800 p-4 cursor-pointer rounded-lg shadow-md transition-all ${
         isFullScreen ? "max-w-4xl mx-auto" : ""
       }`}
     >

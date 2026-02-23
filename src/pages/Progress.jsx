@@ -74,10 +74,10 @@ function Progress() {
   if (!user) return <div className="text-center text-gray-600 dark:text-gray-300">Please log in to view your progress.</div>;
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <h2 className="text-2xl font-bold mb-4 dark:text-gray-300">My Memorization Progress</h2>
       <ProgressForm onSubmit={handleAdd} />
-      <div className="flex flex-row gap-4 md:flex-row flex-col">
+      <div className="flex flex-col gap-4 md:flex-row ">
         <div className="flex-1">
           <h3 className="text-xl font-semibold mb-2 dark:text-gray-300">Memorized</h3>
           <div className="grid md:grid-cols-1 gap-4">
@@ -88,7 +88,7 @@ function Progress() {
                 <div
                   key={verse._id}
                   className={`${
-                    selectedVerse?._id === verse._id ? 'fixed inset-0 z-50 overflow-auto p-4' : ''
+                    selectedVerse?._id === verse._id ? 'bg-gray-100 fixed inset-0 z-50 overflow-auto p-4 pt-20' : ''
                   }`}
                   onClick={() => handleVerseClick(verse)}
                 >
