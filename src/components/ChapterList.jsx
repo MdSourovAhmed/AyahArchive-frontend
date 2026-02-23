@@ -22,7 +22,7 @@ function ChapterList({ chapters, surah, verses, isSearchResult = false }) {
     <div
       key={surahData._id}
       className={`bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer ${
-        selectedSurah?._id === surahData._id ? 'fixed inset-0 z-50 overflow-auto p-4' : ''
+        selectedSurah?._id === surahData._id ? 'bg-gray-100 fixed inset-0 z-50 overflow-auto p-4' : ''
       }`}
       onClick={(e) => {
         e.stopPropagation(); // Prevent click from bubbling to overlay
