@@ -115,7 +115,7 @@ function Progress() {
                 <div
                   key={verse._id}
                   className={`${
-                    selectedVerse?._id === verse._id ? 'fixed inset-0 z-50 overflow-auto p-4' : ''
+                    selectedVerse?._id === verse._id ? 'bg-gray-100 fixed inset-0 z-50 overflow-auto p-4 pt-20' : ''
                   }`}
                   onClick={() => handleVerseClick(verse)}
                 >
